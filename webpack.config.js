@@ -8,7 +8,10 @@ module.exports = {
         contentBase: './dist',
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['**/*', '!.git/**', '!.gitignore'],
+            dry: true
+        }),
     ],
     entry: {
         app: './src/js/index.js'
