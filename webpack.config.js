@@ -3,8 +3,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-    mode: 'development',
+    // mode: 'development',
     // devtool: 'source-map',
+    performance: { hints: false },
     devServer: {
         contentBase: './dist',
     },

@@ -4,10 +4,11 @@
   "description": "Public write-only access to my task list",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "webpack --watch",
-    "serve": "webpack-dev-server",
-    "open": "webpack-dev-server --open",
-    "build": "webpack",
+    "watch": "webpack -d --watch",
+    "serve": "webpack-dev-server -d",
+    "open": "webpack-dev-server -d --open",
+    "build": "webpack -d",
+    "build-production": "webpack -p",
     "golive": "scripts/golive.sh"
   },
   "main": "index.js",
