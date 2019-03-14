@@ -1,0 +1,51 @@
+{
+  "name": "cando",
+  "version": "1.0.0",
+  "description": "Public write-only access to my task list",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:daveio/cando.dave.io.git",
+  "author": "Dave Williams <dave@dave.io>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.0",
+    "css-loader": "^2.1.1",
+    "csv-loader": "^3.0.2",
+    "eslint": "^5.15.1",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "prettier": "^1.16.4",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.3.4",
+    "lodash": "^4.17.11"
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "arrowParens": "always",
+    "insertPragma": true,
+    "useTabs": false
+  }
+}
