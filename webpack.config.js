@@ -10,7 +10,6 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin({
             cleanOnceBeforeBuildPatterns: ['**/*', '!.git/**', '!.gitignore'],
-            dry: true
         }),
     ],
     entry: {
