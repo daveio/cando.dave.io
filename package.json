@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "golive": "scripts/golive.sh"
   },
   "main": "index.js",
   "repository": "git@github.com:daveio/cando.dave.io.git",
