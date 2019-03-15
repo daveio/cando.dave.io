@@ -37,45 +37,45 @@
             <div class="col-md-12">
                 <form role="form">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Your name</label>
-                        <input type="email" class="form-control" id="txtName" placeholder="Enter name" data-pg-name="txtName">
+                        <label for="txtName">Your name</label>
+                        <input type="text" class="form-control" id="txtName" placeholder="Enter name" name="txtName">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Your email address</label>
-                        <input type="email" class="form-control" id="txtEmail" placeholder="Enter email address" data-pg-name="txtEmail">
+                        <label for="txtEmail">Your email address</label>
+                        <input type="email" class="form-control" id="txtEmail" placeholder="Enter email address" name="txtEmail">
                     </div>
                     <div class="form-group">
-                        <label for="formInput24">A short title for the task (no more than ten words)</label>
-                        <input type="text" class="form-control" id="txtTitle" placeholder="Enter title" data-pg-name="txtTitle">
+                        <label for="txtTitle">A short title for the task (no more than ten words)</label>
+                        <input type="text" class="form-control" id="txtTitle" placeholder="Enter title" name="txtTitle">
                     </div>
                     <div class="form-group">
-                        <label for="formInput24">When do you need it completed by?</label>
-                        <input type="text" class="form-control" id="txtDueDate" placeholder="YYYY-MM-DD hh:mm" data-pg-name="txtDueDate">
+                        <label for="txtDueDate">When do you need it completed by?</label>
+                        <input type="text" class="form-control" id="txtDueDate" placeholder="YYYY-MM-DD hh:mm" name="txtDueDate">
                     </div>
                     <div class="form-group">
-                        <label for="formInput24">How important is it?</label>
+                        <label for="optP">How important is it?</label>
                         <div class="row">
                             <div class="btn-group col-xl-auto" data-toggle="buttons">
                                 <label class="btn btn-secondary active">
-                                    <input type="radio" name="optP" id="optP3" value="P3" autocomplete="off" data-pg-name="optP3" checked="checked"> Only if you find the time
+                                    <input type="radio" name="optP" id="optP3" value="P3" autocomplete="off" checked="checked"> Only if you find the time
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="optP" id="optP2" value="P2" autocomplete="off" data-pg-name="optP2"> Fairly important
+                                    <input type="radio" name="optP" id="optP2" value="P2" autocomplete="off"> Fairly important
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="optP" id="optP1" value="P1" autocomplete="off" data-pg-name="optP1"> Very important
+                                    <input type="radio" name="optP" id="optP1" value="P1" autocomplete="off"> Very important
                                 </label>
                                 <label class="btn btn-secondary">
-                                    <input type="radio" name="optP" id="optP0" value="P0" autocomplete="off" data-pg-name="optP0"> Absolutely critical
+                                    <input type="radio" name="optP" id="optP0" value="P0" autocomplete="off"> Absolutely critical
                                 </label>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Any additional detail or notes about the task</label>
-                        <textarea class="form-control" rows="3" id="taNotes" data-pg-name="taNotes"></textarea>
+                        <label for="taNotes">Any additional detail or notes about the task</label>
+                        <textarea class="form-control" rows="3" id="taNotes" name="taNotes"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="btnSubmit" data-pg-name="btnSubmit" name="btnSubmit">Create task</button>
+                    <button type="submit" class="btn btn-primary" id="btnSubmit" name="btnSubmit" name="btnSubmit">Create task</button>
                 </form>
             </div>
         </div>
