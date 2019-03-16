@@ -18,8 +18,9 @@ import qs from 'qs'
 // use Axios to post data to a papi endpoint
 export function sendRequest() {
     let form = document.forms.frmTask
+    let formData = new FormData(form)
     let data = {}
-    form.forEach(function(value, key) {
+    formData.forEach(function(value, key) {
         data[key] = value
     })
     axios.post('https://papi.eu.ngrok.io/add_task', qs.stringify(data))
