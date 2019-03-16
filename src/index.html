@@ -35,7 +35,7 @@
     <div class="container mb-5">
         <div class="row">
             <div class="col-md-12">
-                <form role="form">
+                <form role="form" id="frmTask">
                     <div class="form-group">
                         <label for="txtName">Your name</label>
                         <input type="text" class="form-control" id="txtName" placeholder="Enter name" name="txtName">
@@ -75,7 +75,7 @@
                         <label for="taNotes">Any additional detail or notes about the task</label>
                         <textarea class="form-control" rows="3" id="taNotes" name="taNotes"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="btnSubmit" name="btnSubmit" name="btnSubmit">Create task</button>
+                    <button type="submit" class="btn btn-primary" id="btnSubmit" name="btnSubmit" name="btnSubmit" onClick="cando.sendRequest()">Create task</button>
                 </form>
             </div>
         </div>

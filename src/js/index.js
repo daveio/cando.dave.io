@@ -1,17 +1,26 @@
 /** @format */
 
+// polyfills
 require('es6-promise').polyfill()
 
+// structural imports
 import 'bootstrap'
-import _ from 'lodash'
 import '../css/app.scss'
-import Icon from '../images/icon.jpg'
 import '../index.html'
 import '../about.html'
 import '../CNAME'
+
+// functional imports
+import _ from 'lodash'
 import axios from 'axios'
 import qs from 'qs'
 
-export function sendRequest(data) {
-    axios.post('https://postb.in/GnfdAHfl', qs.stringify(data))
+// use Axios to post data to a papi endpoint
+export function sendRequest() {
+    let form = document.forms.frmTask
+    let data = {}
+    form.forEach(function(value, key) {
+        data[key] = value
+    })
+    axios.post('https://papi.eu.ngrok.io/add_task', qs.stringify(data))
 }
