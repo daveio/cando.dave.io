@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.3.4",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
     "es6-promise": "^4.2.6",
     "jquery": "^3.4.0 >=3.4.0",
