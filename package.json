@@ -53,7 +53,7 @@
     "jquery": "^3.4.0 >=3.4.0",
     "lodash": "^4.17.13",
     "popper.js": "^1.14.7",
-    "qs": "^6.6.0"
+    "qs": "^6.7.3"
   },
   "prettier": {
     "trailingComma": "none",
